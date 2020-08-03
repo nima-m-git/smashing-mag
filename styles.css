@@ -1,0 +1,155 @@
+/* Format */
+* {
+    padding: 0;
+    margin: 0;
+  }
+
+body > * {
+    border: 1px solid grey;
+}
+
+ul {
+    list-style: none;
+}
+
+.vert-line {
+    position: absolute;
+}
+
+/* Header */
+.header {
+    display: flex;
+    height: 100px;
+}
+
+.header > * {
+    flex: 1;
+    border: 1px solid red;
+    background: rgba(128, 128, 128, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-weight: 600;
+    font-size: 1.5em;
+    font-family: 'Averia Sans Libre', cursive;
+    color: white;
+}
+
+/* Latest Articles */
+.latest-articles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 400px 400px;
+}
+
+.latest-articles .title {
+    position: absolute;
+    border: 3px solid grey;
+    left: 40%;
+    width: 180px;
+    height: 80px;
+}
+
+.latest-articles > .article {
+    background: rgba(112, 112, 112, 0.534);
+    display: grid;
+    padding-top: 20%;
+    grid-area: 
+        "headshot wrote"
+        "header"
+        "comment"
+        "tech"
+        "arrow";
+    grid-template-areas: ;
+}
+
+.article {
+    border: 1px solid red;
+}
+
+/* Latest Posts */
+.latest-posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 300px 500px 300px 500px;
+}
+
+.supporters {
+    background: rgba(204, 204, 204, 0.747);
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.smash-ad {
+    grid-column: 2 / 4;
+    background: rgba(255, 0, 0, 0.548);
+}
+
+.members.smash-ad {
+    grid-row: 2 / 3;
+}
+
+/* Click Ad */
+.click-ad {
+    height: 500px;
+    background: rgb(200, 216, 221);
+}
+
+/* Community Links */
+.person-of-the-week {
+    height: 300px;
+    background: rgba(128, 128, 128, 0.288);
+}
+
+.wrotes {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 200px);
+}
+
+.wrote {
+    border: 1px solid pink;
+    background: rgba(128, 128, 128, 0.199);
+}
+
+/* Featured Book */
+.featured-book {
+    height: 300px;
+    background: rgba(128, 128, 128, 0.616);
+}
+
+/* Our Guides */
+.our-guides {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 200px 300px 50px;
+    padding: 30px;
+}
+
+.guide, .newsletter {
+    border: 1px solid green;
+    margin: 20px 10px;
+}
+
+.guide {
+    background: rgba(128, 128, 128, 0.164);
+}
+
+.newsletter {
+    background: rgba(128, 128, 128, 0.486);
+}
+
+.our-guides footer {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    background: rgb(209, 209, 209);
+    height: 100%;
+    margin: 0 300px;
+}
+
+/* Footer */
+body footer {
+    height: 300px;
+    background: rgba(128, 128, 128, 0.747);
+}
